@@ -1,0 +1,24 @@
+{
+  "name": "invisible-habits-visible-energy",
+  "version": "1.0.0",
+  "description": "Visualizing how meals, movement, caffeine, and sleep shape student energy and mood — Advanced Data Visualization Techniques Dashboard",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -p 5555",
+    "test": "node verify.js",
+    "lint": "echo \"Pure client-side HTML5/CSS3/ES6+ JavaScript — No build step required.\""
+  },
+  "keywords": [
+    "data-visualization",
+    "chartjs",
+    "d3js",
+    "student-health",
+    "circadian-rhythms",
+    "icmr-nin",
+    "nutrition-dashboard",
+    "saas-bento-grid",
+    "vanilla-javascript"
+  ],
+  "author": "Kajan Birla",
+  "license": "MIT"
+}

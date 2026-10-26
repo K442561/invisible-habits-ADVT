@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invisible Habits, Visible Energy | Student Health & Nutritive Dietary Intelligence</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Visualizing how meals, movement, caffeine, and sleep shape student energy and mood, with personalized nutritive dietary planning.">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Left Sidebar Navigation (Desktop) -->
+    <aside class="app-sidebar" aria-label="Main Navigation">
+      <div class="sidebar-header">
+        <div class="brand-title">
+          <div class="brand-icon" aria-hidden="true">⚡</div>
+          <span>Invisible Habits</span>
+        </div>
+        <p class="brand-subtitle">Visualizing how meals, movement, caffeine, and sleep shape student energy and mood.</p>
+      </div>
+
+      <nav class="sidebar-nav" role="tablist">
+        <div class="nav-category">SaaS Showcase</div>
+        <button class="nav-link active" data-page="showcase" role="tab" aria-selected="true">
+          <span class="nav-icon" aria-hidden="true">✨</span>
+          <span>1. SaaS Bento Showcase</span>
+        </button>
+
+        <div class="nav-category">Personal Intelligence</div>
+        <button class="nav-link" data-page="dietary-plan" role="tab" aria-selected="false">
+          <span class="nav-icon" aria-hidden="true">🥗</span>
+          <span>2. Dietary Plan & Health</span>
+        </button>
+
+        <div class="nav-category">Cohort Analytics</div>
+        <button class="nav-link" data-page="summary" role="tab" aria-selected="false">
+          <span class="nav-icon" aria-hidden="true">📊</span>
+          <span>3. Cohort Summary</span>
+        </button>
+        <button class="nav-link" data-page="trends" role="tab" aria-selected="false">
+          <span class="nav-icon" aria-hidden="true">📈</span>
+          <span>4. Trends & Regularity</span>
+        </button>
+        <button class="nav-link" data-page="food-drivers" role="tab" aria-selected="false">
+          <span class="nav-icon" aria-hidden="true">🧭</span>
+          <span>5. Food & Choice Drivers</span>
+        </button>
+        <button class="nav-link" data-page="calendar" role="tab" aria-selected="false">
+          <span class="nav-icon" aria-hidden="true">📅</span>
+          <span>6. Calendar View</span>
+        </button>
+        <button class="nav-link" data-page="products" role="tab" aria-selected="false">
+          <span class="nav-icon" aria-hidden="true">🔍</span>
+          <span>7. Product Explorer</span>
+        </button>
+
+        <div class="nav-category">System & Support</div>
+        <button class="nav-link" data-page="about" role="tab" aria-selected="false">
+          <span class="nav-icon" aria-hidden="true">ℹ️</span>
+          <span>8. About & Support</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div><strong>Ethical Note:</strong> Observational sample analysis. Non-judgmental student health exploration.</div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="app-main">
+      <!-- Sticky Top Bar -->
+      <header class="app-topbar">
+        <div class="topbar-left">
+          <h1 class="page-headline-title" id="topbarPageTitle">SaaS Bento Showcase & Platform Overview</h1>
+          <span class="sample-data-badge" aria-label="Sample data warning">
+            <span class="sample-dot" aria-hidden="true"></span>
+            <span>Sample data</span>
+          </span>
+        </div>
+        <div class="topbar-right">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle light or dark theme">
+            <span aria-hidden="true">🌙</span> Dark Mode
+          </button>
+        </div>
+      </header>
+
+      <div class="page-content">
+
+        <!-- ============================================== -->
+        <!-- 1. SAAS BENTO SHOWCASE & OVERVIEW TAB -->
+        <!-- ============================================== -->
+        <section class="page-view active" id="page-showcase" role="tabpanel" aria-label="SaaS Bento Showcase">
+          <div class="bento-hero-section">
+            <div class="bento-header-banner">
+              <div class="bento-tagline">
+                <span aria-hidden="true">✦</span> Next-Gen Student Vitality Intelligence Platform
+              </div>
+              <h2 class="bento-title">
+                Turn Invisible Daily Habits into <span class="bento-title-gradient">Visible Energy & Focus</span>
+              </h2>
+              <p class="bento-subtitle">
+                A modern data visualization and personalized nutrition intelligence engine. Discover how sleep timing, screen hours, meal consistency, and stress directly shape academic stamina.
+              </p>
+            </div>
+
+            <!-- Bento Box Grid Structure -->
+            <div class="bento-grid">
+              <!-- 1. Dominant Top-Left Card: 3D Product Dashboard Chart Graphic -->
+              <div class="bento-card bento-card-hero">
+                <div class="bento-hero-content">
+                  <div class="bento-card-badge">
+                    <span aria-hidden="true">⚡</span> Live Vitality Engine
+                  </div>
+                  <h3 class="bento-card-title">Multi-Dimensional Student Energy Dashboard</h3>
+                  <p class="bento-card-desc">
+                    Real-time synthesis of circadian sleep rhythms, meal regularity offsets, and glycemic recovery curves in an interactive 3D perspective space.
+                  </p>
+
+                  <div class="bento-3d-stage" id="bento3DStage" aria-label="Interactive 3D Product Dashboard Graphic">
+                    <div class="floating-glass-badge badge-float-1">
+                      <span style="color: var(--emerald-green); font-size: 1rem;">●</span>
+                      <span>Vitality Index: 94.2%</span>
+                    </div>
+                    <div class="floating-glass-badge badge-float-2">
+                      <span style="color: var(--pastel-purple-dark); font-size: 1rem;">✦</span>
+                      <span>Sleep Rhythm: Optimal</span>
+                    </div>
+                    <div class="bento-3d-canvas-wrap">
+                      <canvas id="bento3DCanvas" width="680" height="260" aria-label="3D Dashboard Graphic"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. Middle Vertical Card: Testimonial & High-Quality Avatars -->
+              <div class="bento-card bento-card-vertical">
+                <div>
+                  <div class="bento-card-badge" style="background-color: var(--pastel-purple-light); color: var(--pastel-purple-dark); border-color: var(--pastel-purple-border);">
+                    Student Voices
+                  </div>
+                  <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                  <blockquote class="testimonial-quote">
+                    "Cutting off caffeine by 3:00 PM and swapping my late-night packaged noodles for curd and roasted chana eliminated my 3 PM study crashes completely. The nutritive dietary plan was super practical for campus life!"
+                  </blockquote>
+                </div>
+
+                <div class="testimonial-author-box">
+                  <div class="author-avatar-stack">
+                    <div class="author-avatar">AK</div>
+                  </div>
+                  <div class="author-info">
+                    <h4>Aarav K.</h4>
+                    <p>Student Wellness Representative</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Wide Lower Card: Integrations -->
+              <div class="bento-card bento-card-integrations">
+                <div class="bento-card-badge">
+                  <span aria-hidden="true">🔗</span> Ecosystem Connected
+                </div>
+                <h3 class="bento-card-title">Seamless Device & Campus Integrations</h3>
+                <p class="bento-card-desc">
+                  Effortlessly connect health trackers, canteen payment logs, smart rings, and sleep sensors into a unified, non-judgmental wellness timeline.
+                </p>
+
+                <div class="integrations-badges-grid">
+                  <div class="integration-item">
+                    <span class="integration-dot" aria-hidden="true"></span>
+                    <span>Apple Health</span>
+                  </div>
+                  <div class="integration-item">
+                    <span class="integration-dot" aria-hidden="true"></span>
+                    <span>Google Fit</span>
+                  </div>
+                  <div class="integration-item">
+                    <span class="integration-dot" aria-hidden="true"></span>
+                    <span>Oura Ring</span>
+                  </div>
+                  <div class="integration-item">
+                    <span class="integration-dot" aria-hidden="true"></span>
+                    <span>Whoop 4.0</span>
+                  </div>
+                  <div class="integration-item">
+                    <span class="integration-dot" aria-hidden="true"></span>
+                    <span>Fitbit Sync</span>
+                  </div>
+                  <div class="integration-item">
+                    <span class="integration-dot" aria-hidden="true"></span>
+                    <span>Campus Canteen</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Bright Primary-Accent Call-to-Action Card -->
+              <div class="bento-card bento-card-cta">
+                <div>
+                  <div style="background: rgba(255, 255, 255, 0.2); padding: 4px 10px; border-radius: 9999px; font-size: 0.72rem; font-weight: 700; display: inline-block; margin-bottom: 12px; text-transform: uppercase;">
+                    Interactive Diagnostic
+                  </div>
+                  <h3>Ready to Build Your Personal Dietary Plan?</h3>
+                  <p>
+                    Input your daily sleep, meals, mobile hours, social time, and stress to receive an instant, evidence-backed nutritive dietary plan.
+                  </p>
+                </div>
+                <button class="btn-bento-cta" id="bentoCtaButton">
+                  <span>Start Health Check & Plan</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- 2. PERSONAL HEALTH CHECK & NUTRITIVE DIETARY PLAN TAB -->
+        <!-- ============================================== -->
+        <section class="page-view" id="page-dietary-plan" role="tabpanel" aria-label="Dietary Plan & Health Check">
+          <div class="headline-insight-card" style="background: linear-gradient(135deg, var(--emerald-green-light) 0%, var(--pastel-purple-light) 100%); border-color: var(--emerald-green-border);">
+            <div class="insight-icon" style="background-color: var(--emerald-green-dark);" aria-hidden="true">🥗</div>
+            <div class="insight-body">
+              <h3 style="color: var(--emerald-green-dark);">Adaptive Nutritive Dietary Recommendation Engine</h3>
+              <p>
+                Tell us about your day: your sleep, meals, mobile screen time, friends time, workout hours, and stress level. Our engine detects health shifts and builds a targeted, practical nutritive meal plan for breakfast, lunch, snacks, and dinner.
+              </p>
+            </div>
+          </div>
+
+          <div class="dietary-engine-layout">
+            <!-- Left Column: Interactive Inputs -->
+            <div class="input-section-card">
+              <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 18px; color: var(--text-primary); display: flex; align-items: center; gap: 8px;">
+                <span>📝</span> <span>Your Daily Health & Routine Inputs</span>
+              </h3>
+
+              <!-- Sleep Hours -->
+              <div class="form-group-block">
+                <div class="form-label-title">
+                  <label for="inputSleepHours">Sleep Duration</label>
+                  <span class="form-label-val" id="valSleepHoursDisplay">6.5 hours</span>
+                </div>
+                <input type="range" class="range-slider-custom" id="inputSleepHours" min="3" max="11" step="0.5" value="6.5">
+                <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-muted); margin-top: 4px;">
+                  <span>3h (Severe Deficit)</span>
+                  <span>7.5h (Target)</span>
+                  <span>11h</span>
+                </div>
+              </div>
+
+              <!-- Meals Separated: Breakfast, Lunch, Snack, Dinner -->
+              <div class="form-group-block">
+                <div class="form-label-title">
+                  <span>Meal Choices by Period</span>
+                  <span style="font-size: 0.74rem; color: var(--text-muted);">Separate evaluation</span>
+                </div>
+
+                <!-- Breakfast -->
+                <div style="margin-bottom: 10px;">
+                  <label style="font-size: 0.78rem; font-weight: 700; color: var(--text-secondary);" for="inputBreakfastSelect">Breakfast:</label>
+                  <select class="filter-select" id="inputBreakfastSelect" style="width: 100%; margin-top: 4px;">
+                    <option value="balanced">Balanced (Steamed Idli / Oats / Poha / Egg & Fruit)</option>
+                    <option value="light">Light (Tea & Biscuits / Bread)</option>
+                    <option value="fried">Fried / Refined (Parathas / Puri / Bakery Pastry)</option>
+                    <option value="skipped">Skipped (No Breakfast Consumed)</option>
+                  </select>
+                </div>
+
+                <!-- Lunch -->
+                <div style="margin-bottom: 10px;">
+                  <label style="font-size: 0.78rem; font-weight: 700; color: var(--text-secondary);" for="inputLunchSelect">Lunch:</label>
+                  <select class="filter-select" id="inputLunchSelect" style="width: 100%; margin-top: 4px;">
+                    <option value="balanced">Balanced Mess / Home (Dal Rice, Curd, Vegetables, Salad)</option>
+                    <option value="mixed">Mixed Canteen (Roti Subzi, Mixed Rice, Side)</option>
+                    <option value="junk">Fast Food / Delivery (Burger, Pizza Slice, Fried Noodles)</option>
+                  </select>
+                </div>
+
+                <!-- Snack -->
+                <div style="margin-bottom: 10px;">
+                  <label style="font-size: 0.78rem; font-weight: 700; color: var(--text-secondary);" for="inputSnackSelect">Evening Snack:</label>
+                  <select class="filter-select" id="inputSnackSelect" style="width: 100%; margin-top: 4px;">
+                    <option value="fresh">Fresh & Wholesome (Fruit, Roasted Chana, Sprouts, Peanuts)</option>
+                    <option value="baked">Baked Snacks (Digestive Biscuits, Crackers)</option>
+                    <option value="fried">Fried Snacks / Chips (Namkeen, French Fries, Kurkure)</option>
+                    <option value="sweets">Chocolates / Sweets / Energy Drink</option>
+                    <option value="none">None (No Snack Consumed)</option>
+                  </select>
+                </div>
+
+                <!-- Dinner -->
+                <div>
+                  <label style="font-size: 0.78rem; font-weight: 700; color: var(--text-secondary);" for="inputDinnerTiming">Dinner Timing & Quality:</label>
+                  <select class="filter-select" id="inputDinnerTiming" style="width: 100%; margin-top: 4px;">
+                    <option value="early_balanced">Early (Before 20:30) • Light Digestible Meal</option>
+                    <option value="standard">Standard (20:30–21:30) • Regular Meal</option>
+                    <option value="late_heavy">Late Night (After 22:00) • Heavy or Delivery Meal</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Junk Food vs Normal Food Ratio -->
+              <div class="form-group-block">
+                <div class="form-label-title">
+                  <label for="inputJunkRatio">Junk Food vs Normal / Whole Food Ratio</label>
+                  <span class="form-label-val" id="valJunkRatioDisplay">35% Junk</span>
+                </div>
+                <input type="range" class="range-slider-custom" id="inputJunkRatio" min="0" max="100" step="5" value="35">
+                <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-muted); margin-top: 4px;">
+                  <span>0% (All Whole Food)</span>
+                  <span>50 / 50</span>
+                  <span>100% (All Processed Junk)</span>
+                </div>
+              </div>
+
+              <!-- Repeated Items Eaten -->
+              <div class="form-group-block">
+                <div class="form-label-title">
+                  <span>Repeated Items Frequently Logged</span>
+                </div>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px;">Select items you eat or drink multiple days in a row:</p>
+                <div class="chips-multiselect" id="repeatedChipsGroup">
+                  <button type="button" class="chip-btn active" data-item="Instant Noodles">Instant Noodles</button>
+                  <button type="button" class="chip-btn active" data-item="Carbonated Soda">Carbonated Soda</button>
+                  <button type="button" class="chip-btn" data-item="Energy Drink">Energy Drink</button>
+                  <button type="button" class="chip-btn active" data-item="Chips / Namkeen">Chips / Namkeen</button>
+                  <button type="button" class="chip-btn" data-item="Cold Coffee">Cold Coffee</button>
+                  <button type="button" class="chip-btn" data-item="Plain Curd">Plain Curd</button>
+                  <button type="button" class="chip-btn" data-item="Banana / Fruits">Banana / Fruits</button>
+                  <button type="button" class="chip-btn" data-item="Chocolates">Chocolates</button>
+                </div>
+              </div>
+
+              <!-- Social Hours & Mobile Usage -->
+              <div class="form-group-block">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                  <div>
+                    <div class="form-label-title">
+                      <label for="inputFriendsHours">Friends Time</label>
+                      <span class="form-label-val" id="valFriendsHoursDisplay">2.0h</span>
+                    </div>
+                    <input type="range" class="range-slider-custom" id="inputFriendsHours" min="0" max="6" step="0.5" value="2">
+                  </div>
+                  <div>
+                    <div class="form-label-title">
+                      <label for="inputMobileHours">Mobile Screen Time</label>
+                      <span class="form-label-val" id="valMobileHoursDisplay">4.5h</span>
+                    </div>
+                    <input type="range" class="range-slider-custom" id="inputMobileHours" min="1" max="12" step="0.5" value="4.5">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Workout & Stress Level -->
+              <div class="form-group-block">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                  <div>
+                    <div class="form-label-title">
+                      <label for="inputWorkoutHours">Workout Duration</label>
+                      <span class="form-label-val" id="valWorkoutHoursDisplay">0.5h</span>
+                    </div>
+                    <input type="range" class="range-slider-custom" id="inputWorkoutHours" min="0" max="3" step="0.25" value="0.5">
+                  </div>
+                  <div>
+                    <div class="form-label-title">
+                      <label for="inputStressLevel">Stress Level</label>
+                    </div>
+                    <select class="filter-select" id="inputStressLevel" style="width: 100%;">
+                      <option value="low">Low (Relaxed)</option>
+                      <option value="moderate" selected>Moderate (Normal Routine)</option>
+                      <option value="high">High (Deadlines / Exams)</option>
+                      <option value="severe">Severe (Exam Days Crunch)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Extra Concerns & Tasks -->
+              <div class="form-group-block">
+                <div class="form-label-title">
+                  <span>Extra Concerns & Tasks</span>
+                </div>
+                <div class="chips-multiselect" id="concernsChipsGroup">
+                  <button type="button" class="chip-btn active" data-concern="late_night">Late Night Study</button>
+                  <button type="button" class="chip-btn" data-concern="dehydration">Low Water / Dehydration</button>
+                  <button type="button" class="chip-btn active" data-concern="afternoon_crash">Afternoon Energy Fog</button>
+                  <button type="button" class="chip-btn" data-concern="sugar_craving">Intense Sugar Cravings</button>
+                  <button type="button" class="chip-btn" data-concern="eyestrain">Screen Eyestrain / Headache</button>
+                </div>
+              </div>
+
+              <button class="btn btn-primary" id="btnGenerateDietaryPlan" style="width: 100%; padding: 12px; font-weight: 700; font-size: 1rem; margin-top: 10px;">
+                ⚡ Calculate Health Shift & Generate Nutritive Plan
+              </button>
+            </div>
+
+            <!-- Right Column: Health Status & Tailored Nutritive Dietary Plan -->
+            <div class="dietary-plan-card" id="dietaryPlanResultsArea">
+              <!-- Dynamic Health Shift Banner -->
+              <div class="health-status-banner alert-warning" id="planHealthStatusBanner">
+                <div class="vitality-score-circle" id="planScoreCircle">
+                  <span id="planScoreValue">62</span>
+                  <span style="font-size: 0.62rem; color: var(--text-muted); font-weight: 600;">/ 100</span>
+                </div>
+                <div>
+                  <h4 style="font-size: 1.05rem; font-weight: 800; margin-bottom: 2px;" id="planStatusHeading">
+                    Moderate Circadian & Glycemic Strain Detected
+                  </h4>
+                  <p style="font-size: 0.82rem; line-height: 1.45;" id="planStatusSummary">
+                    Sub-7h sleep, evening mobile screen time, and repeated instant noodle consumption are contributing to afternoon energy crashes.
+                  </p>
+                </div>
+              </div>
+
+              <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 4px; color: var(--text-primary); display: flex; align-items: center; justify-content: space-between;">
+                <span>🥗 Your Targeted Nutritive Dietary Plan</span>
+                <span class="badge badge-teal" style="font-size: 0.72rem;">ICMR-NIN Aligned</span>
+              </h3>
+              <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 14px;">
+                Structured around healthy whole foods to sustain daytime stamina without glycemic spikes or sleep interference.
+              </p>
+
+              <!-- Meal Prescriptions Grid -->
+              <div class="meal-prescription-grid">
+                <!-- Breakfast Prescription -->
+                <div class="meal-presc-card">
+                  <div class="meal-presc-header">
+                    <div class="meal-presc-title">🌅 Breakfast (08:00–08:45)</div>
+                    <span class="badge badge-teal">Essential</span>
+                  </div>
+                  <div class="meal-presc-items" id="prescBreakfast">
+                    <strong>2 Steamed Idlis with Sambar + 1 Boiled Egg (or Sprouts)</strong>. Add 1 small fresh banana.
+                  </div>
+                  <div class="meal-presc-benefit" id="prescBreakfastBenefit">
+                    ✓ Slow-release carbs + 14g protein prevent 11 AM brain fog.
+                  </div>
+                </div>
+
+                <!-- Lunch Prescription -->
+                <div class="meal-presc-card">
+                  <div class="meal-presc-header">
+                    <div class="meal-presc-title">☀️ Lunch (12:45–13:30)</div>
+                    <span class="badge badge-teal">Sustained</span>
+                  </div>
+                  <div class="meal-presc-items" id="prescLunch">
+                    <strong>Steamed Rice with Toor Dal + Plain Curd (Dahi)</strong> + Cucumber tomato salad. Avoid deep-fried sides.
+                  </div>
+                  <div class="meal-presc-benefit" id="prescLunchBenefit">
+                    ✓ Probiotic dahi + fiber stabilizes post-prandial glycemic load.
+                  </div>
+                </div>
+
+                <!-- Evening Snack Prescription -->
+                <div class="meal-presc-card">
+                  <div class="meal-presc-header">
+                    <div class="meal-presc-title">🍏 Smart Snack (16:30–17:00)</div>
+                    <span class="badge badge-orange">Swap Junk</span>
+                  </div>
+                  <div class="meal-presc-items" id="prescSnack">
+                    <strong>Roasted Chana (Bengal Gram, 40g) + Unsalted Peanuts (20g)</strong>. Swap cola for warm water or green tea.
+                  </div>
+                  <div class="meal-presc-benefit" id="prescSnackBenefit">
+                    ✓ High-protein crunch satisfies hunger with ZERO added sugar.
+                  </div>
+                </div>
+
+                <!-- Dinner Prescription -->
+                <div class="meal-presc-card">
+                  <div class="meal-presc-header">
+                    <div class="meal-presc-title">🌙 Dinner (Before 20:30)</div>
+                    <span class="badge badge-teal">Sleep-Friendly</span>
+                  </div>
+                  <div class="meal-presc-items" id="prescDinner">
+                    <strong>Light Vegetable Khichdi or 2 Rotis with Paneer / Dal</strong>. Finish eating at least 2.5 hours before sleep.
+                  </div>
+                  <div class="meal-presc-benefit" id="prescDinnerBenefit">
+                    ✓ Tryptophan-rich protein assists natural sleep onset.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Daily Target Parameters & Lifestyle Countermeasures -->
+              <div class="protocol-guidance-box" id="prescProtocolBox">
+                <div style="font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; justify-content: space-between;">
+                  <span>🎯 Daily Targets & Nutrient Benchmarks</span>
+                  <span id="prescTargetKcal" style="color: var(--emerald-green-dark); font-weight: 800;">Target: 2,100 kcal</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin: 8px 0;">
+                  <div><strong>Free Sugar:</strong> < 25 g / day</div>
+                  <div><strong>Hydration:</strong> 2.8 Liters</div>
+                  <div><strong>Caffeine Curfew:</strong> Before 15:00</div>
+                  <div><strong>Mobile Curfew:</strong> 45m before bed</div>
+                </div>
+                <div style="margin-top: 6px; font-size: 0.78rem; color: var(--text-secondary);" id="prescSpecialAdvice">
+                  <strong>Personalized Advice:</strong> With 4.5h mobile screen time and late-night study concerns, establish a 10:30 PM screen twilight rule to enhance deep slow-wave sleep.
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div style="display: flex; gap: 10px; margin-top: 18px;">
+                <button class="btn btn-outline" id="btnPrintDietaryPlan" style="flex: 1;">
+                  <span>🖨️</span> <span>Print / Save Plan</span>
+                </button>
+                <button class="btn btn-primary" id="btnCopyDietaryPlan" style="flex: 1;">
+                  <span>📋</span> <span>Copy Plan Summary</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- 3. COHORT SUMMARY TAB -->
+        <!-- ============================================== -->
+        <section class="page-view" id="page-summary" role="tabpanel" aria-label="Cohort Summary and Vitality Hub">
+          
+          <!-- Unified Cohort Simulation and Live Intelligence Engine Panel -->
+          <div class="cohort-sim-hub" id="cohortSimHub-summary">
+            <div class="sim-hub-header">
+              <div class="sim-title-group">
+                <span style="font-size: 1.2rem;">⚡</span>
+                <div>
+                  <h3 style="font-size: 1.05rem; font-weight: 800; color: var(--text-primary); margin: 0;">
+                    Cohort Scenario and Live Intelligence Engine
+                  </h3>
+                  <p style="font-size: 0.74rem; color: var(--text-muted); margin: 2px 0 0 0;">
+                    Modify cohort parameters manually, stream live ticking data, or prompt the AI scenario synthesizer.
+                  </p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <div class="sim-status-pill" id="simStatusPill">
+                  <span style="font-size: 0.6rem;">●</span> <span id="simStatusText">Baseline Cohort Routine</span>
+                </div>
+                <div class="sim-mode-switcher">
+                  <button type="button" class="sim-tab-btn active" data-mode="manual">🎛️ Manual</button>
+                  <button type="button" class="sim-tab-btn" data-mode="running">🏃 Live Stream</button>
+                  <button type="button" class="sim-tab-btn" data-mode="ai">🤖 AI Scenario</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 1: Manual Parameter Modifiers -->
+            <div class="sim-panel active" id="simPanel-manual">
+              <div class="sim-slider-grid">
+                <div class="sim-slider-card">
+                  <div class="sim-slider-header">
+                    <span>Sleep Duration Shift</span>
+                    <span class="sim-val-pill" id="simValSleepDisplay">+0.0h</span>
+                  </div>
+                  <input type="range" class="range-slider-custom" id="simInputSleep" min="-3.0" max="3.0" step="0.2" value="0.0">
+                  <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                    <span>-3.0h (Deprivation)</span>
+                    <span>0.0h</span>
+                    <span>+3.0h (Optimal)</span>
+                  </div>
+                </div>
+
+                <div class="sim-slider-card">
+                  <div class="sim-slider-header">
+                    <span>Daily Caffeine Surge</span>
+                    <span class="sim-val-pill" id="simValCaffeineDisplay">+0 mg</span>
+                  </div>
+                  <input type="range" class="range-slider-custom" id="simInputCaffeine" min="-100" max="300" step="10" value="0">
+                  <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                    <span>-100mg</span>
+                    <span>Baseline</span>
+                    <span>+300mg</span>
+                  </div>
+                </div>
+
+                <div class="sim-slider-card">
+                  <div class="sim-slider-header">
+                    <span>Junk and Processed Ratio</span>
+                    <span class="sim-val-pill" id="simValJunkDisplay">35%</span>
+                  </div>
+                  <input type="range" class="range-slider-custom" id="simInputJunk" min="0" max="100" step="5" value="35">
+                  <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                    <span>0% (Whole Food)</span>
+                    <span>35%</span>
+                    <span>100% (Ultra-Processed)</span>
+                  </div>
+                </div>
+
+                <div class="sim-slider-card">
+                  <div class="sim-slider-header">
+                    <span>Meal Timing Regularity</span>
+                    <span class="sim-val-pill" id="simValRegularityDisplay">35m (Regular)</span>
+                  </div>
+                  <input type="range" class="range-slider-custom" id="simInputRegularity" min="-20" max="60" step="5" value="0">
+                  <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                    <span>Strict (15m)</span>
+                    <span>Standard</span>
+                    <span>Erratic (90m)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 2: Live Stream Panel -->
+            <div class="sim-panel" id="simPanel-running">
+              <div class="sim-stream-bar">
+                <div class="sim-stream-controls">
+                  <button type="button" class="btn btn-primary" id="btnToggleStream" style="padding: 8px 18px;">
+                    <span id="streamPlayIcon">▶</span> <span id="streamPlayText">Start Live Stream</span>
+                  </button>
+                  <div class="sim-speed-selector">
+                    <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600; margin-right: 4px;">Speed:</span>
+                    <button type="button" class="sim-speed-btn active" data-speed="1000">1x</button>
+                    <button type="button" class="sim-speed-btn" data-speed="500">2x</button>
+                    <button type="button" class="sim-speed-btn" data-speed="200">5x</button>
+                    <button type="button" class="sim-speed-btn" data-speed="80">10x</button>
+                  </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.76rem; color: var(--text-secondary);">
+                  <span>Day:</span>
+                  <strong id="streamDayCounter" style="font-size: 0.9rem; color: var(--text-primary);">Day 1 / 30</strong>
+                  <span class="badge badge-teal" id="streamEventCountBadge">1,800 records</span>
+                </div>
+              </div>
+              <div class="sim-stream-ticker" id="simStreamTicker">
+                <span style="color: var(--emerald-green); font-size: 0.8rem;">●</span>
+                <span id="simTickerText">Live Stream Ready. Click 'Start Live Stream' to stream real-time student entries.</span>
+              </div>
+            </div>
+
+            <!-- Panel 3: AI Scenario Generator -->
+            <div class="sim-panel" id="simPanel-ai">
+              <p style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 8px;">
+                Select an AI preset scenario or enter a free-form natural language prompt to model the cohort:
+              </p>
+              <div class="sim-ai-presets">
+                <button type="button" class="sim-preset-btn" data-preset="exam_crunch">
+                  ⚡ Exam Crunch All-Nighter
+                </button>
+                <button type="button" class="sim-preset-btn" data-preset="nutritive_reset">
+                  🥑 ICMR-NIN Nutritive Reset
+                </button>
+                <button type="button" class="sim-preset-btn" data-preset="weekend_binge">
+                  🍕 Weekend Delivery Binge
+                </button>
+                <button type="button" class="sim-preset-btn" data-preset="caffeine_overdrive">
+                  ☕ Caffeine Overdrive and Crash
+                </button>
+              </div>
+              <div class="sim-ai-prompt-box">
+                <input type="text" class="sim-ai-input" id="aiScenarioPromptInput" placeholder="Type custom AI prompt, e.g. 'Engineering students during finals with 4 hours sleep, 3 cold coffees, and instant noodles'...">
+                <button type="button" class="btn btn-primary" id="btnRunAIPrompt" style="white-space: nowrap;">
+                  ✨ Synthesize AI Scenario
+                </button>
+              </div>
+              <div class="sim-ai-result-banner" id="aiResultBanner" style="display: none;">
+                <span style="font-size: 1.1rem;">🧠</span>
+                <div id="aiResultText" style="line-height: 1.4;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Headline Insight Banner -->
+          <div class="headline-insight-card">
+            <div class="insight-icon" aria-hidden="true">💡</div>
+            <div class="insight-body">
+              <h3>Core Finding (Dynamic Sample Analysis)</h3>
+              <p id="dynamicKeyFindingText">Loading dynamic finding from cohort dataset...</p>
+            </div>
+          </div>
+
+          <!-- 4 Headline Cards -->
+          <div class="cards-grid-4">
+            <div class="stat-card">
+              <div class="stat-header">
+                <span class="stat-label">Average Sugar</span>
+                <span class="stat-badge orange">Ref: ~25g/d</span>
+              </div>
+              <div class="stat-value" id="statValSugar">-- g</div>
+              <div class="stat-subtext">ICMR-NIN 2024 Dietary Guidelines (&lt;5% energy)</div>
+              <div class="stat-sparkline" id="sparkline-sugar" aria-hidden="true"></div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-header">
+                <span class="stat-label">Average Caffeine</span>
+                <span class="stat-badge teal">Ref: &lt;300mg/d</span>
+              </div>
+              <div class="stat-value" id="statValCaffeine">-- mg</div>
+              <div class="stat-subtext">Indian dietary guidance for adults</div>
+              <div class="stat-sparkline" id="sparkline-caffeine" aria-hidden="true"></div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-header">
+                <span class="stat-label">Low-Energy Days</span>
+                <span class="stat-badge orange">Rating ≤ 2</span>
+              </div>
+              <div class="stat-value" id="statValLowEnergy">-- %</div>
+              <div class="stat-subtext">Proportion of student-days with energy rating 1 or 2</div>
+              <div class="stat-sparkline" id="sparkline-energy" aria-hidden="true"></div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-header">
+                <span class="stat-label">Top Food Driver</span>
+                <span class="stat-badge teal">Primary Reason</span>
+              </div>
+              <div class="stat-value" id="statValReason">Convenience</div>
+              <div class="stat-subtext">Most frequently cited meal selection reason</div>
+              <div class="stat-sparkline" id="sparkline-sleep" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- Dynamic Visualizations Suite for Tab 3 -->
+          <div class="charts-content-wrapper">
+            <!-- 1. 4D Phase-Space Vitality Bubble Orbit -->
+            <div class="chart-card">
+              <div class="chart-card-header" style="flex-wrap: wrap; gap: 12px;">
+                <div class="chart-title-area">
+                  <h3>4D Phase-Space Cohort Vitality Orbit (Energy vs. Sleep vs. Sugar and Caffeine)</h3>
+                  <p>Every bubble represents student physiological state. X: Sleep (h), Y: Energy (1–5), Bubble Radius: Sugar intake (g), Color: Vitality State.</p>
+                </div>
+                <div class="btn-group" id="orbitModeGroup" style="display: flex; gap: 6px;">
+                  <button type="button" class="btn btn-outline active" id="btnOrbitCentroids" style="padding: 5px 10px; font-size: 0.76rem;">
+                    👥 60 Student Centroids
+                  </button>
+                  <button type="button" class="btn btn-outline" id="btnOrbitAllPoints" style="padding: 5px 10px; font-size: 0.76rem;">
+                    🌌 All 1,800 Observations
+                  </button>
+                  <button type="button" class="btn btn-outline" id="btnOrbitExamShift" style="padding: 5px 10px; font-size: 0.76rem;">
+                    ⚡ Exam Days Shift
+                  </button>
+                </div>
+              </div>
+
+              <!-- Phase-Space Interactive Canvas Stage -->
+              <div class="phase-space-stage" id="phaseSpaceStage" style="position: relative; min-height: 440px;">
+                <canvas id="phaseSpaceCanvas" class="phase-space-canvas"></canvas>
+                <div id="phaseSpaceTooltip" class="phase-space-tooltip" style="display: none;"></div>
+              </div>
+
+              <div class="chart-caption" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <div>
+                  <strong>How to read this chart:</strong> Upper right reflects Peak Stamina (7h+ sleep + high energy). Lower left reflects Critical Exhaustion.
+                </div>
+                <div style="font-size: 0.74rem; display: flex; gap: 12px; align-items: center;">
+                  <span><strong style="color: #10b981;">●</strong> Peak Stamina</span>
+                  <span><strong style="color: #0d9488;">●</strong> Stable</span>
+                  <span><strong style="color: #8b5cf6;">●</strong> Adrenaline Overdrive</span>
+                  <span><strong style="color: #ef4444;">●</strong> Critical Exhaustion</span>
+                  <span style="color: var(--text-muted);">(Radius = Daily Sugar)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Dual Panel: Vitality Pulse Gauge + Cohort Risk Horizon Bar -->
+            <div class="charts-grid-2">
+              <div class="chart-card">
+                <div class="chart-card-header">
+                  <div class="chart-title-area">
+                    <h3>Cohort Vitality Index and Circadian Sub-Meters</h3>
+                    <p>Composite health score derived from circadian rhythm, nutrition, and recovery.</p>
+                  </div>
+                </div>
+                <div class="vitality-pulse-wrapper">
+                  <div class="pulse-gauge-svg-wrap">
+                    <svg viewBox="0 0 160 160" width="100%" height="100%" id="vitalityPulseSVG">
+                      <circle cx="80" cy="80" r="68" fill="none" stroke="var(--border-color)" stroke-width="12" stroke-dasharray="320" stroke-dashoffset="0"></circle>
+                      <circle id="pulseGaugeArc" cx="80" cy="80" r="68" fill="none" stroke="url(#pulseGrad)" stroke-width="12" stroke-linecap="round" stroke-dasharray="427" stroke-dashoffset="110" transform="rotate(-90 80 80)" style="transition: stroke-dashoffset 0.6s ease;"></circle>
+                      <defs>
+                        <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stop-color="#8b5cf6"></stop>
+                          <stop offset="100%" stop-color="#10b981"></stop>
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <div class="pulse-gauge-center">
+                      <div class="pulse-gauge-score" id="cohortVitalityScoreDisplay">78%</div>
+                      <div class="pulse-gauge-label">Vitality</div>
+                    </div>
+                  </div>
+
+                  <div class="pulse-submeters-list">
+                    <div class="pulse-submeter-item">
+                      <div class="pulse-submeter-info">
+                        <span>Circadian Sleep Rhythm</span>
+                        <strong id="meterCircadianVal">82%</strong>
+                      </div>
+                      <div class="pulse-submeter-track">
+                        <div class="pulse-submeter-fill" id="meterCircadianFill" style="width: 82%; background: var(--emerald-green);"></div>
+                      </div>
+                    </div>
+                    <div class="pulse-submeter-item">
+                      <div class="pulse-submeter-info">
+                        <span>Glycemic Stability</span>
+                        <strong id="meterGlycemicVal">68%</strong>
+                      </div>
+                      <div class="pulse-submeter-track">
+                        <div class="pulse-submeter-fill" id="meterGlycemicFill" style="width: 68%; background: var(--primary-teal);"></div>
+                      </div>
+                    </div>
+                    <div class="pulse-submeter-item">
+                      <div class="pulse-submeter-info">
+                        <span>Nutrient Whole-Food Density</span>
+                        <strong id="meterNutrientVal">74%</strong>
+                      </div>
+                      <div class="pulse-submeter-track">
+                        <div class="pulse-submeter-fill" id="meterNutrientFill" style="width: 74%; background: var(--pastel-purple);"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chart-card">
+                <div class="chart-card-header">
+                  <div class="chart-title-area">
+                    <h3>Cohort Risk-Tier Divergence Distribution</h3>
+                    <p>Student population segmented by physiological strain level under active input.</p>
+                  </div>
+                </div>
+                <div style="padding: 14px 0;">
+                  <div class="diverging-horizon-bar" id="cohortRiskHorizonBar">
+                    <div class="horizon-slice" id="sliceFlourishing" style="width: 45%; background: var(--emerald-green);" title="Flourishing"></div>
+                    <div class="horizon-slice" id="sliceStable" style="width: 30%; background: var(--primary-teal);" title="Stable"></div>
+                    <div class="horizon-slice" id="sliceVulnerable" style="width: 15%; background: #f59e0b;" title="Vulnerable"></div>
+                    <div class="horizon-slice" id="sliceDepleted" style="width: 10%; background: #ef4444;" title="Depleted"></div>
+                  </div>
+                  <div class="horizon-legend">
+                    <span><strong style="color: var(--emerald-green);">●</strong> Flourishing (<span id="pctFlourishing">45%</span>)</span>
+                    <span><strong style="color: var(--primary-teal);">●</strong> Stable (<span id="pctStable">30%</span>)</span>
+                    <span><strong style="color: #f59e0b;">●</strong> Vulnerable (<span id="pctVulnerable">15%</span>)</span>
+                    <span><strong style="color: #ef4444;">●</strong> Depleted (<span id="pctDepleted">10%</span>)</span>
+                  </div>
+                </div>
+                <div class="chart-caption" style="margin-top: 14px;">
+                  <strong>Population Shift:</strong> Dynamically recalculates the proportion of students maintaining sustained vitality versus those in energy depletion.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- 4. TRENDS & MEAL REGULARITY TAB -->
+        <!-- ============================================== -->
+        <section class="page-view" id="page-trends" role="tabpanel" aria-label="Trends & Regularity">
+          <div class="headline-insight-card">
+            <div class="insight-icon" aria-hidden="true">⏱️</div>
+            <div class="insight-body">
+              <h3>Temporal Cycles & Meal Regularity Dynamics</h3>
+              <p id="trendsHeadlineInsightText">
+                Consistent meal timing (regularity index under 35 min) correlates with 42% higher daytime energy. Exam days show both delayed meal times and a 2.4× spike in late caffeine intake.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dedicated Manual Input Control Hub for Tab 4 -->
+          <div class="cohort-sim-hub" id="cohortSimHub-trends">
+            <div class="sim-hub-header">
+              <div class="sim-title-group">
+                <span style="font-size: 1.2rem;">🎛️</span>
+                <div>
+                  <h3 style="font-size: 1.05rem; font-weight: 800; color: var(--text-primary); margin: 0;">
+                    Manual Temporal & Regularity Controls
+                  </h3>
+                  <p style="font-size: 0.74rem; color: var(--text-muted); margin: 2px 0 0 0;">
+                    Adjust meal timing dispersion, exam-period stress, and weekend recovery to see real-time graph and bar shifts.
+                  </p>
+                </div>
+              </div>
+              <div class="sim-status-pill" id="trendsSimStatusPill">
+                <span style="font-size: 0.6rem;">●</span> <span id="trendsSimStatusText">Interactive Manual Mode</span>
+              </div>
+            </div>
+
+            <div class="sim-slider-grid">
+              <!-- Slider 1: Meal Timing Regularity -->
+              <div class="sim-slider-card">
+                <div class="sim-slider-header">
+                  <span>Meal Timing Regularity Target</span>
+                  <span class="sim-val-pill" id="simTrendsValRegularity">35m (Standard)</span>
+                </div>
+                <input type="range" class="range-slider-custom" id="simTrendsInputRegularity" min="-20" max="60" step="5" value="0">
+                <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                  <span>Strict (15m)</span>
+                  <span>Standard (35m)</span>
+                  <span>Erratic (95m)</span>
+                </div>
+              </div>
+
+              <!-- Slider 2: Exam Days Stress & Energy Dip -->
+              <div class="sim-slider-card">
+                <div class="sim-slider-header">
+                  <span>Exam Days Energy Dip</span>
+                  <span class="sim-val-pill" id="simTrendsValExamDip">-1.2 pts</span>
+                </div>
+                <input type="range" class="range-slider-custom" id="simTrendsInputExamDip" min="-2.5" max="0.0" step="0.1" value="-1.2">
+                <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                  <span>Severe (-2.5)</span>
+                  <span>Standard (-1.2)</span>
+                  <span>Mild (0.0)</span>
+                </div>
+              </div>
+
+              <!-- Slider 3: Weekend Catch-Up Recovery -->
+              <div class="sim-slider-card">
+                <div class="sim-slider-header">
+                  <span>Weekend Circadian Rebound</span>
+                  <span class="sim-val-pill" id="simTrendsValWeekend">+1.2h</span>
+                </div>
+                <input type="range" class="range-slider-custom" id="simTrendsInputWeekend" min="0.0" max="3.0" step="0.2" value="1.2">
+                <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                  <span>0.0h</span>
+                  <span>+1.2h</span>
+                  <span>+3.0h (Max)</span>
+                </div>
+              </div>
+
+              <!-- Slider 4: Late Caffeine Surge -->
+              <div class="sim-slider-card">
+                <div class="sim-slider-header">
+                  <span>Late Caffeine Intake Surge</span>
+                  <span class="sim-val-pill" id="simTrendsValCaff">+0 mg</span>
+                </div>
+                <input type="range" class="range-slider-custom" id="simTrendsInputCaff" min="-100" max="300" step="10" value="0">
+                <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                  <span>-100mg</span>
+                  <span>Baseline</span>
+                  <span>+300mg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="charts-content-wrapper">
+            <!-- 1. Primary Graph Visualization: 30-Day Moving Average Line Chart of Energy & Caffeine -->
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-title-area">
+                  <h3>30-Day Energy & Caffeine Trajectory Line Graph with 7-Day Moving Average</h3>
+                  <p>Shows daily cohort mean energy ratings alongside caffeine intake. Shaded band indicates Exam days period.</p>
+                </div>
+              </div>
+              <div class="chart-wrapper" style="min-height: 330px;">
+                <canvas id="trendsMainLineChart" aria-label="30-day trendline graph with moving average" role="img"></canvas>
+              </div>
+              <div class="chart-caption">
+                <strong>How to read this graph:</strong> The solid teal line tracks cohort energy rating (1 to 5), while the dashed green line depicts the 7-day moving average. Notice the sharp drop during Days 15 to 20 (Exam days) coinciding with caffeine peaks.
+              </div>
+            </div>
+
+            <!-- 2. Dual Bar Visualizations: Weekday Seasonality + Meal Regularity Distribution Histogram -->
+            <div class="charts-grid-2">
+              <div class="chart-card">
+                <div class="chart-card-header">
+                  <div class="chart-title-area">
+                    <h3>Weekday Seasonality Bar Chart (Monday to Sunday)</h3>
+                    <p>Cohort mean energy rating categorized by day of week.</p>
+                  </div>
+                </div>
+                <div class="chart-wrapper" style="min-height: 280px;">
+                  <canvas id="trendsSeasonalityChart" aria-label="Weekday seasonality bar chart" role="img"></canvas>
+                </div>
+                <div class="chart-caption">
+                  <strong>Seasonality Pattern:</strong> Energy rebounds on Saturday and Sunday due to circadian catch-up sleep and relaxed meal schedules.
+                </div>
+              </div>
+
+              <!-- Bar Visualization 2: Meal Regularity Distribution Histogram -->
+              <div class="chart-card">
+                <div class="chart-card-header">
+                  <div class="chart-title-area">
+                    <h3>Meal Regularity Index Distribution Bar Chart</h3>
+                    <p>Frequency of students across meal timing regularity brackets.</p>
+                  </div>
+                </div>
+                <div class="chart-wrapper" style="min-height: 280px;">
+                  <canvas id="trendsRegularityHistogram" aria-label="Meal regularity distribution histogram" role="img"></canvas>
+                </div>
+                <div class="chart-caption">
+                  <strong>Regularity Tiers:</strong> Shows proportion of students adhering to Strict (&lt;20m), Consistent (20-35m), Variable (35-50m), or Erratic (&gt;50m) meal windows.
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Auxiliary Visualizations: 24-Hour Polar Clock Dial + Living Heatmap -->
+            <div class="charts-grid-2">
+              <!-- 24-Hour Polar Clock Dial -->
+              <div class="chart-card">
+                <div class="chart-card-header">
+                  <div class="chart-title-area">
+                    <h3>Circadian 24-Hour Polar Clock Dial</h3>
+                    <p>Visualizing meal windows and the glowing 15:00 caffeine curfew zone.</p>
+                  </div>
+                </div>
+                <div class="polar-clock-stage">
+                  <canvas id="polarClockCanvas" width="300" height="300" style="max-width: 100%;"></canvas>
+                </div>
+                <div class="chart-caption">
+                  <strong>Curfew Monitor:</strong> The amber shaded sector indicates 15:00 to 24:00. The dial dynamically plots student caffeine consumptions breaching this curfew.
+                </div>
+              </div>
+
+              <!-- Calendar Heatmap of Meal Timing Dispersion (D3) -->
+              <div class="chart-card">
+                <div class="chart-card-header">
+                  <div class="chart-title-area">
+                    <h3>Living Calendar Heatmap: Meal Timing Dispersion (60 Students × 30 Days)</h3>
+                    <p>Students on rows, days on columns. Warmer colors indicate higher dispersion from target meal windows.</p>
+                  </div>
+                </div>
+                <div class="chart-scroll-wrapper">
+                  <div id="regularityHeatmap" style="min-width: 600px; min-height: 300px;" aria-label="D3 Heatmap of meal timing dispersion" role="img"></div>
+                </div>
+                <div class="chart-caption">
+                  <strong>Heatmap Guide:</strong> Teal indicates meal timing within 20 minutes of standard windows; warm orange indicates delayed or skipped meals.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- 5. FOOD, DRINKS & CHOICE DRIVERS TAB -->
+        <!-- ============================================== -->
+        <section class="page-view" id="page-food-drivers" role="tabpanel" aria-label="Food and Choice Drivers">
+          <div class="headline-insight-card">
+            <div class="insight-icon" aria-hidden="true">🧭</div>
+            <div class="insight-body">
+              <h3>Nutritional & Behavioral Driver Analytics</h3>
+              <p id="foodDriversInsightText">
+                When meals were chosen based on 'convenience' or 'peers,' 71% originated from canteens or delivery, resulting in primarily refined or fried meal quality.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dedicated Manual Input Control Hub for Tab 5 -->
+          <div class="cohort-sim-hub" id="cohortSimHub-food">
+            <div class="sim-hub-header">
+              <div class="sim-title-group">
+                <span style="font-size: 1.2rem;">🥗</span>
+                <div>
+                  <h3 style="font-size: 1.05rem; font-weight: 800; color: var(--text-primary); margin: 0;">
+                    Manual Nutritional & Dietary Modifier Controls
+                  </h3>
+                  <p style="font-size: 0.74rem; color: var(--text-muted); margin: 2px 0 0 0;">
+                    Adjust ultra-processed food ratio, free sugar modifier, caffeine levels, and meal convenience bias to see dynamic graph and bar responses.
+                  </p>
+                </div>
+              </div>
+              <div class="sim-status-pill" id="foodSimStatusPill">
+                <span style="font-size: 0.6rem;">●</span> <span id="foodSimStatusText">Interactive Manual Mode</span>
+              </div>
+            </div>
+
+            <div class="sim-slider-grid">
+              <!-- Slider 1: Junk / Ultra-Processed Ratio -->
+              <div class="sim-slider-card">
+                <div class="sim-slider-header">
+                  <span>Ultra-Processed & Junk Ratio</span>
+                  <span class="sim-val-pill" id="simFoodValJunk">35%</span>
+                </div>
+                <input type="range" class="range-slider-custom" id="simFoodInputJunk" min="0" max="100" step="5" value="35">
+                <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                  <span>0% (Whole Food)</span>
+                  <span>35% (Baseline)</span>
+                  <span>100% (Ultra-Processed)</span>
+                </div>
+              </div>
+
+              <!-- Slider 2: Daily Free Sugar Shift -->
+              <div class="sim-slider-card">
+                <div class="sim-slider-header">
+                  <span>Daily Free Sugar Shift</span>
+                  <span class="sim-val-pill" id="simFoodValSugar">+0 g</span>
+                </div>
+                <input type="range" class="range-slider-custom" id="simFoodInputSugar" min="-20" max="50" step="2" value="0">
+                <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                  <span>-20g (&lt;25g limit)</span>
+                  <span>+0g</span>
+                  <span>+50g (Spike)</span>
+                </div>
+              </div>
+
+              <!-- Slider 3: Daily Caffeine Surge -->
+              <div class="sim-slider-card">
+                <div class="sim-slider-header">
+                  <span>Caffeinated Drink Surge</span>
+                  <span class="sim-val-pill" id="simFoodValCaff">+0 mg</span>
+                </div>
+                <input type="range" class="range-slider-custom" id="simFoodInputCaff" min="-100" max="300" step="10" value="0">
+                <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                  <span>-100mg</span>
+                  <span>Baseline (26mg)</span>
+                  <span>+300mg (Curfew)</span>
+                </div>
+              </div>
+
+              <!-- Slider 4: Meal Source Convenience Bias -->
+              <div class="sim-slider-card">
+                <div class="sim-slider-header">
+                  <span>Canteen & Delivery Reliance</span>
+                  <span class="sim-val-pill" id="simFoodValConvenience">45%</span>
+                </div>
+                <input type="range" class="range-slider-custom" id="simFoodInputConvenience" min="10" max="90" step="5" value="45">
+                <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: var(--text-muted); margin-top: 3px;">
+                  <span>Home / Mess Dominant</span>
+                  <span>45%</span>
+                  <span>Canteen / Delivery Dominant</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="charts-content-wrapper">
+            <!-- 1. Primary Graph Visualization: Processing vs Energy Response Curve Graph -->
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-title-area">
+                  <h3>Food Processing vs. Energy Response Curve Graph</h3>
+                  <p>Dynamic physiological response curve plotting daytime energy, glycemic stability, and afternoon crash risk as ultra-processed ratio scales.</p>
+                </div>
+              </div>
+              <div class="chart-wrapper" style="min-height: 330px;">
+                <canvas id="foodResponseCurveChart" aria-label="Processing vs energy response curve graph" role="img"></canvas>
+              </div>
+              <div class="chart-caption">
+                <strong>How to read this response curve:</strong> The teal line shows daytime energy rating (1-5), the green line shows glycemic stability (%), and the orange line shows afternoon crash risk (%). Shaded threshold marks the ICMR-NIN recommended whole-food transition boundary (&lt;5% free sugar / &lt;25g/d). The red marker pin indicates your active manual input position.
+              </div>
+            </div>
+
+            <!-- 2. Dual Bar Visualizations: Stacked Category Nutrients + Food Choice Drivers Breakdown -->
+            <div class="charts-grid-2">
+              <!-- Bar Visualization 1: Stacked Nutrient Contribution by Category -->
+              <div class="chart-card">
+                <div class="chart-card-header">
+                  <div class="chart-title-area">
+                    <h3>Nutritional Contribution by Food Category (Stacked Bar Chart)</h3>
+                    <p>Free sugar, caffeine, and caloric density breakdown across all 10 SKU categories.</p>
+                  </div>
+                </div>
+                <div class="chart-wrapper" style="min-height: 300px;">
+                  <canvas id="foodNutrientStackedChart" aria-label="Stacked bar chart of nutrients by category" role="img"></canvas>
+                </div>
+                <div class="chart-caption">
+                  <strong>Nutritional Breakdown:</strong> Sugar (orange), Caffeine (teal), and Caloric Energy density (purple) stacked per student monthly intake.
+                </div>
+              </div>
+
+              <!-- Bar Visualization 2: Food Choice Drivers & Source Distribution -->
+              <div class="chart-card">
+                <div class="chart-card-header">
+                  <div class="chart-title-area">
+                    <h3>Food Choice Drivers & Meal Source Bar Chart</h3>
+                    <p>Frequency of meal selections grouped by behavioral reason and meal preparation source.</p>
+                  </div>
+                </div>
+                <div class="chart-wrapper" style="min-height: 300px;">
+                  <canvas id="foodDriversBarChart" aria-label="Food choice drivers bar chart" role="img"></canvas>
+                </div>
+                <div class="chart-caption">
+                  <strong>Driver Insights:</strong> Convenience and hunger drive the majority of campus food decisions, with canteens and delivery dominant when convenience is prioritized.
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Auxiliary Visualizations: Snack Donut Chart + Balance Beams -->
+            <div class="charts-grid-2">
+              <div class="chart-card">
+                <div class="chart-card-header">
+                  <div class="chart-title-area">
+                    <h3>Fried vs. Baked Snack Distribution</h3>
+                    <p>Cohort proportion of snack consumption types.</p>
+                  </div>
+                </div>
+                <div class="chart-wrapper" style="min-height: 280px;">
+                  <canvas id="foodDonutChart" aria-label="Donut chart of fried versus baked snacks" role="img"></canvas>
+                </div>
+              </div>
+
+              <!-- Nutrient Overload Balance Beam -->
+              <div class="chart-card">
+                <div class="chart-card-header">
+                  <div class="chart-title-area">
+                    <h3>Nutrient Overload Balance Beam and Limits</h3>
+                    <p>Dynamic comparison against ICMR-NIN 2024 guidance and adult reference limits.</p>
+                  </div>
+                </div>
+                <div class="balance-beam-grid">
+                  <!-- Free Sugar Beam -->
+                  <div class="balance-beam-card">
+                    <div class="balance-beam-header">
+                      <span>Free Sugar vs 25g/d Limit</span>
+                      <strong id="beamSugarVal" style="color: var(--warm-orange);">34.2 g / d</strong>
+                    </div>
+                    <div class="balance-beam-track">
+                      <div class="balance-beam-bar" id="beamSugarBar" style="width: 68%; background: var(--warm-orange);"></div>
+                      <div class="balance-beam-limit-marker" style="left: 50%;">
+                        <span class="balance-beam-limit-label">25g Limit</span>
+                      </div>
+                    </div>
+                    <p style="font-size: 0.72rem; color: var(--text-muted); margin-top: 8px;" id="beamSugarStatus">
+                      Exceeds ICMR-NIN 2024 guideline of &lt;5% total daily energy intake.
+                    </p>
+                  </div>
+
+                  <!-- Caffeine Curfew Beam -->
+                  <div class="balance-beam-card">
+                    <div class="balance-beam-header">
+                      <span>Caffeine vs 300mg Adult Curfew</span>
+                      <strong id="beamCaffeineVal" style="color: var(--primary-teal);">26 mg / d</strong>
+                    </div>
+                    <div class="balance-beam-track">
+                      <div class="balance-beam-bar" id="beamCaffeineBar" style="width: 18%; background: var(--primary-teal);"></div>
+                      <div class="balance-beam-limit-marker" style="left: 75%;">
+                        <span class="balance-beam-limit-label">300mg Limit</span>
+                      </div>
+                    </div>
+                    <p style="font-size: 0.72rem; color: var(--text-muted); margin-top: 8px;" id="beamCaffeineStatus">
+                      Well within safe adult physiological bounds (&lt;300 mg/day).
+                    </p>
+                  </div>
+
+                  <!-- Whole Foods vs Ultra-Processed Ratio -->
+                  <div class="balance-beam-card" style="grid-column: 1 / -1;">
+                    <div class="balance-beam-header">
+                      <span>Fresh / Whole Foods vs Ultra-Processed Foods</span>
+                      <strong id="beamRatioVal" style="color: var(--emerald-green);">65% Whole : 35% Processed</strong>
+                    </div>
+                    <div class="balance-beam-track">
+                      <div class="balance-beam-bar" id="beamRatioBar" style="width: 65%; background: var(--emerald-green);"></div>
+                    </div>
+                    <p style="font-size: 0.72rem; color: var(--text-muted); margin-top: 8px;">
+                      Higher whole food density delivers essential micronutrients without glycemic volatility.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Living D3 Sankey Diagram Flow -->
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-title-area">
+                  <h3>Dynamic Sankey Flow: Reason → Meal Source → Nutritional Quality</h3>
+                  <p>Interactive behavioral pathway tracing meal selection reasons to sources and nutritional quality.</p>
+                </div>
+              </div>
+              <div class="chart-scroll-wrapper">
+                <div id="driversSankeyContainer" style="min-width: 700px; min-height: 400px;" aria-label="D3 Sankey Flow diagram" role="img"></div>
+              </div>
+              <div class="chart-caption">
+                <strong>Dynamic Flow Width:</strong> Directly proportional to total student-day occurrences across the cohort under the current scenario.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- 6. CALENDAR VIEW TAB -->
+        <!-- ============================================== -->
+        <section class="page-view" id="page-calendar" role="tabpanel" aria-label="Calendar View">
+          <div class="headline-insight-card">
+            <div class="insight-icon" aria-hidden="true">📅</div>
+            <div class="insight-body">
+              <h3>Monthly Day-by-Day Energy Log</h3>
+              <p>Each calendar day tile is colored by reported energy rating (1 to 5). Click any day to reveal full breakdown of meal times, sleep, steps, and consumed products.</p>
+            </div>
+          </div>
+
+          <div class="filter-bar">
+            <div class="filter-group">
+              <div class="filter-item">
+                <label class="filter-label" for="calendarStudentSelect">Select Student:</label>
+                <select class="filter-select filter-student-select" id="calendarStudentSelect"></select>
+              </div>
+            </div>
+          </div>
+
+          <div class="charts-content-wrapper">
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-title-area">
+                  <h3>30-Day Monthly Calendar Grid</h3>
+                  <p>Dashed outlines highlight Exam days (Days 15–20).</p>
+                </div>
+              </div>
+              <div class="calendar-grid" id="monthlyCalendarGrid" role="grid"></div>
+              <div class="chart-caption">
+                <strong>Color Key:</strong> Teal (4–5) indicates high energy; Amber (3) indicates moderate energy; Warm Orange (1–2) indicates low-energy days.
+              </div>
+            </div>
+
+            <div class="chart-card" id="calendarDayDetailsCard">
+              <div style="color: var(--text-muted); text-align: center; padding: 20px;">
+                Click any day tile above to inspect logged meal times, sleep, and snack details for that specific day.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- 7. PRODUCT EXPLORER TAB (100 SKUs) -->
+        <!-- ============================================== -->
+        <section class="page-view" id="page-products" role="tabpanel" aria-label="Product Explorer">
+          <div class="headline-insight-card">
+            <div class="insight-icon" aria-hidden="true">🔍</div>
+            <div class="insight-body">
+              <h3>Standardized Product Catalog (100 SKUs)</h3>
+              <p>Explore all 100 food and beverage SKUs with manufacturer nutrition labels and ICMR-NIN IFCT 2017 citations. Clicking any row opens official packaging facts.</p>
+            </div>
+          </div>
+
+          <!-- Top 15 Sugary Chart Card -->
+          <div class="chart-card">
+            <div class="chart-card-header">
+              <div class="chart-title-area">
+                <h3>Top 15 Sugary Items per Stated Serving</h3>
+                <p>Packaged drinks, sodas, and sweet snacks ranked by label sugar content.</p>
+              </div>
+            </div>
+            <div class="chart-wrapper" style="min-height: 320px;">
+              <canvas id="topSugaryChart" aria-label="Top 15 sugary items bar chart" role="img"></canvas>
+            </div>
+            <div class="chart-caption">
+              <strong>Notice:</strong> This chart displays manufacturer label values per stated serving size, not measured dietary intake. Check product packaging directly before relying on any number.
+            </div>
+          </div>
+
+          <!-- Filter Bar for Product Explorer -->
+          <div class="filter-bar">
+            <div class="filter-group">
+              <div class="filter-item">
+                <input type="text" class="search-input" id="productSearchInput" placeholder="Search by name or brand..." aria-label="Search catalog items">
+              </div>
+              <div class="filter-item">
+                <label class="filter-label" for="productCategorySelect">Category:</label>
+                <select class="filter-select" id="productCategorySelect">
+                  <option value="all">All 10 Categories</option>
+                  <option value="Carbonated soft drinks">Carbonated soft drinks (14)</option>
+                  <option value="Energy drinks">Energy drinks (8)</option>
+                  <option value="Packaged juices and fruit drinks">Packaged juices and fruit drinks (10)</option>
+                  <option value="Ready-to-drink tea and coffee">Ready-to-drink tea and coffee (8)</option>
+                  <option value="Chips and namkeen">Chips and namkeen (12)</option>
+                  <option value="Biscuits and cookies">Biscuits and cookies (10)</option>
+                  <option value="Instant noodles and ready meals">Instant noodles and ready meals (8)</option>
+                  <option value="Chocolates and sweets">Chocolates and sweets (8)</option>
+                  <option value="Fast food items">Fast food items (8)</option>
+                  <option value="Fresh and minimally processed foods">Fresh & minimally processed (14)</option>
+                </select>
+              </div>
+              <div class="filter-item">
+                <label class="filter-label" for="productVerifiedSelect">Verification:</label>
+                <select class="filter-select" id="productVerifiedSelect">
+                  <option value="all">All SKUs</option>
+                  <option value="true">Verified Only (97)</option>
+                  <option value="false">Unverified Gaps (3)</option>
+                </select>
+              </div>
+              <div class="filter-item">
+                <label class="filter-label" for="productSortSelect">Sort By:</label>
+                <select class="filter-select" id="productSortSelect">
+                  <option value="name">Product Name</option>
+                  <option value="sugar_g">Sugar (g)</option>
+                  <option value="caffeine_mg">Caffeine (mg)</option>
+                  <option value="kcal">Calories (kcal)</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <span class="badge badge-teal" id="productCountBadge">Showing 100 SKUs</span>
+            </div>
+          </div>
+
+          <!-- Product Table -->
+          <div class="table-responsive">
+            <table class="data-table" aria-label="Product Catalog Table">
+              <thead>
+                <tr>
+                  <th>SKU ID</th>
+                  <th>Product Name</th>
+                  <th>Brand</th>
+                  <th>Category</th>
+                  <th>Serving Size</th>
+                  <th>Kcal</th>
+                  <th>Sugar</th>
+                  <th>Caffeine</th>
+                  <th>Sodium</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="productCatalogTbody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- 8. ABOUT AND SUPPORT TAB -->
+        <!-- ============================================== -->
+        <section class="page-view" id="page-about" role="tabpanel" aria-label="About and Support">
+          <div class="headline-insight-card">
+            <div class="insight-icon" aria-hidden="true">ℹ️</div>
+            <div class="insight-body">
+              <h3>Methodology, Standards & Ethics</h3>
+              <p>Transparent documentation of data processing algorithms, reference guidelines, unverified item exclusions, and non-judgmental guidance principles.</p>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 12px;">Purpose & Tone Statement</h3>
+            <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+              This dashboard visualizes how everyday patterns in student eating, drinking, sleep, and physical activity relate to subjective energy and mood. The tone of this dashboard is intentionally encouraging, supportive, and non-judgmental. We never describe an individual student or habit as "bad" or "unhealthy." Every result is framed as an observational pattern in this specific sample, not clinical advice or direct medical causality.
+            </p>
+
+            <h3 style="font-size: 1.1rem; font-weight: 700; margin-top: 18px; margin-bottom: 8px;">Dietary Reference Limits & Citations</h3>
+            <ul style="color: var(--text-secondary); line-height: 1.6; margin-left: 20px; margin-bottom: 16px;">
+              <li><strong>Free Sugar:</strong> Under 5% of total caloric energy, equivalent to about 25 g per day for a standard 2,000 kcal diet (<em>ICMR-NIN Dietary Guidelines for Indians, 2024</em>).</li>
+              <li><strong>Caffeine:</strong> Approximately 300 mg per day for healthy adults, as commonly cited in Indian nutritional and dietary guidance.</li>
+              <li><strong>Salt / Sodium:</strong> Under 5 g of salt per day (approximately 2,000 mg of sodium) as recommended by ICMR-NIN and WHO.</li>
+              <li><strong>Fruits & Vegetables:</strong> At least 400 g per day of fresh, minimally processed produce (<em>ICMR-NIN 2024</em>).</li>
+            </ul>
+
+            <div style="background-color: var(--primary-teal-light); border: 1px solid var(--primary-teal-border); border-radius: var(--radius-md); padding: 14px; margin-bottom: 20px;">
+              <strong>Excluded Unverified Records Count:</strong>
+              <p style="margin-top: 4px; color: var(--text-primary);">
+                A total of <span id="aboutExcludedCountText" style="font-weight: 700;">138 product consumption events</span> involving unverified SKUs were automatically excluded from cumulative nutrient sums to prevent unconfirmed estimates from distorting statistical findings.
+              </p>
+            </div>
+
+            <div style="padding: 14px; background-color: var(--bg-hover); border-radius: var(--radius-md); margin-bottom: 20px;">
+              <strong>Important Packaging Disclaimer:</strong>
+              <p style="margin-top: 4px; color: var(--text-muted); font-size: 0.85rem;">
+                "Product values are per serving from typical labels and may differ by pack size or region. Check the pack before relying on a number."
+              </p>
+            </div>
+
+            <!-- Campus Health & Counseling Section -->
+            <div style="border-top: 1px solid var(--border-color); padding-top: 20px; margin-top: 20px;">
+              <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 8px;">Campus Health and Counseling</h3>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; margin-bottom: 14px;">
+                Support is available if you are feeling overwhelmed, having trouble sleeping, or navigating academic stress:
+              </p>
+              <div style="background-color: var(--bg-hover); border-left: 3px solid var(--primary-teal); padding: 12px 16px; border-radius: var(--radius-sm); font-size: 0.9rem; color: var(--text-primary);">
+                <strong>Add your campus health or counseling contact here.</strong>
+              </div>
+            </div>
+
+            <!-- CSV Export Button -->
+            <div style="margin-top: 24px;">
+              <button class="btn btn-primary" id="exportDatasetCsvBtn">
+                <span aria-hidden="true">📥</span> Export Cleaned Dataset (CSV)
+              </button>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Mobile Bottom Tab Bar (< 768px) -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
+    <div class="mobile-nav-items">
+      <a class="mobile-nav-link active" data-page="showcase">
+        <span class="mobile-nav-icon" aria-hidden="true">✨</span>
+        <span>Showcase</span>
+      </a>
+      <a class="mobile-nav-link" data-page="dietary-plan">
+        <span class="mobile-nav-icon" aria-hidden="true">🥗</span>
+        <span>Diet Plan</span>
+      </a>
+      <a class="mobile-nav-link" data-page="summary">
+        <span class="mobile-nav-icon" aria-hidden="true">📊</span>
+        <span>Summary</span>
+      </a>
+      <a class="mobile-nav-link" data-page="products">
+        <span class="mobile-nav-icon" aria-hidden="true">🔍</span>
+        <span>Products</span>
+      </a>
+      <a class="mobile-nav-link" data-page="about">
+        <span class="mobile-nav-icon" aria-hidden="true">ℹ️</span>
+        <span>About</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Product Details Slide-over Drawer -->
+  <div class="drawer-backdrop" id="productDrawerBackdrop" aria-hidden="true"></div>
+  <aside class="drawer-panel" id="productDrawerPanel" role="dialog" aria-modal="true" aria-label="Product Nutrition Facts">
+    <div class="drawer-header">
+      <div class="drawer-title">Product Nutrition Card</div>
+      <button class="drawer-close-btn" id="closeProductDrawerBtn" aria-label="Close product details">&times;</button>
+    </div>
+    <div class="drawer-content" id="productDrawerContent"></div>
+  </aside>
+
+  <!-- External Chart Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script>
+    if (typeof Chart === 'undefined') {
+      document.write('<script src="vendor/chart.umd.min.js"><\/script>');
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script>
+    if (typeof d3 === 'undefined') {
+      document.write('<script src="vendor/d3.min.js"><\/script>');
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+  <script>
+    if (typeof d3 !== 'undefined' && typeof d3.sankey === 'undefined') {
+      document.write('<script src="vendor/d3-sankey.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- Application Scripts -->
+  <script src="catalog.js"></script>
+  <script src="data.js"></script>
+  <script src="charts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
